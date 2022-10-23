@@ -1,0 +1,141 @@
+.seasons__inner {
+    padding-bottom: 0px;
+
+}
+
+.seasons__wrapper {
+    width: 100%;
+    max-width: 846px;
+    margin: 0 auto;
+}
+
+.seasons__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 104%;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 40px;
+}
+
+.seasons__list {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1270px;
+    list-style-type: none;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* Hide the scrollbar for MS Edge */
+    scrollbar-width: none;
+    /* Hide the scrollbar for Mozilla Firefox */
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.seasons__list::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+    -webkit-overflow-scrolling: touch;
+    /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+.seasons__item {
+    min-width: 390px;
+    min-height: 20vh;
+    margin: 15px;
+    font-size: 5em;
+    line-height: 300px;
+    border-radius: 7px;
+}
+
+.seasons__item__img {
+    width: 100%;
+    max-width: 393px;
+    margin-bottom: 15px;
+}
+
+.seasons__item__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 150%;
+    text-align: start;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.seasons__text {
+    display: block;
+    width: 100%;
+    max-width: 357px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.seasons__item__link {
+    display: block;
+    width: 100%;
+    max-width: 393px;
+    padding: 21px;
+    text-align: center;
+    border: 1.5px solid #000000;
+    border-radius: 42px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+}
+
+
+@media only screen and (max-width:600px) {
+    .seasons__wrapper {
+        width: 100%;
+        max-width: 312px;
+
+    }
+
+    .seasons__list {
+        margin-bottom: 50px;
+    }
+
+    .seasons__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 113%;
+        text-align: center;
+        color: #222222;
+        margin-bottom: 20px;
+
+    }
+
+    .seasons__item {
+        width: 100%;
+        min-width: 284px;
+    }
+
+    .seasons__item__img {
+        width: 100%;
+        max-width: 284px;
+    }
+
+    .seasons__text {
+        width: 100%;
+        max-width: 284px;
+    }
+
+    .seasons__item__link {
+        width: 100%;
+        max-width: 284px;
+    }
+}

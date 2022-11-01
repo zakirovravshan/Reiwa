@@ -590,10 +590,6 @@ main {
     height: 272px;
   }
 }
-.seasons__inner {
-  padding-bottom: 0px;
-}
-
 .seasons__wrapper {
   width: 100%;
   max-width: 846px;
@@ -613,28 +609,13 @@ main {
 .seasons__list {
   margin: 0;
   padding: 0;
-  position: absolute;
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 1270px;
   list-style-type: none;
-  overflow-x: auto;
-  -ms-overflow-style: none;
-  /* Hide the scrollbar for MS Edge */
-  scrollbar-width: none;
-  /* Hide the scrollbar for Mozilla Firefox */
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 100px;
-}
-
-.seasons__list::-webkit-scrollbar {
-  display: none;
-  /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
-  -webkit-overflow-scrolling: touch;
-  /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+  overflow-x: scroll;
+  scrollbar-color: #fff;
 }
 
 .seasons__item {
@@ -720,5 +701,328 @@ main {
   .seasons__item__link {
     width: 100%;
     max-width: 284px;
+  }
+}
+.chance__inner {
+  padding-top: 100px;
+}
+
+.chance__title__wrapper {
+  width: 100%;
+  max-width: 604px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.chance__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 104%;
+  text-align: center;
+  color: #222222;
+}
+
+.chance__text__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 40px;
+}
+
+.chance__text {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141%;
+  text-align: center;
+  color: #1A1A1A;
+}
+
+.chance__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 100px;
+}
+
+.chance__item {
+  position: relative;
+  padding: 194px 88px 86px 88px;
+  width: 100%;
+  max-width: 605px;
+  background: #F5F7F9;
+  border-radius: 34px;
+  text-align: center;
+}
+
+.chance__item::before {
+  position: absolute;
+  background-image: url("../../images/air.png");
+  background-repeat: no-repeat;
+  background-size: 88px 88px;
+  background-position: center;
+  width: 88px;
+  height: 88px;
+  top: 86px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  content: "";
+}
+
+.chance__item:nth-child(2):before {
+  background-image: url("../../images/spark.png");
+}
+
+.chance__item:nth-child(3):before {
+  background-image: url("../../images/tree.png");
+}
+
+.chance__item:nth-child(4):before {
+  background-image: url("../../images/wifi.png");
+}
+
+.chance__item__title {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 121%;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.chance__item__text {
+  display: block;
+  width: 100%;
+  max-width: 429px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 121%;
+  text-align: center;
+  color: #000000;
+}
+
+.chance__subtitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 122%;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 40px;
+}
+
+.chance__sublist {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 100px;
+}
+
+.chance__subitem {
+  position: relative;
+  padding: 30px;
+  width: 100%;
+  max-width: 605px;
+  background-image: url("../../images/chance-bg1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 34px;
+  text-align: center;
+}
+
+.chance__subitem__price {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  max-width: 243px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+  border-radius: 125px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.chance__subitem__title__wrapper {
+  width: 100%;
+  max-width: 447px;
+  margin-bottom: 268px;
+}
+
+.chance__subitem__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  color: #FFFFFF;
+  text-align: start;
+}
+
+.chance__subitem__links {
+  width: 100%;
+  max-width: 545px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chance__subitem__link {
+  width: 100%;
+  max-width: 268px;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 42px;
+  padding: 28px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.chance__subitem__link:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.chance__subitem__link--active {
+  background-color: #fff;
+  color: #000000;
+  transition: all 0.4s ease;
+}
+
+.chance__subitem__link--active:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.chance__subitem:nth-child(2) {
+  background-image: url("../../images/chance-bg2.jpg");
+}
+
+.chance__subitem:nth-child(3) {
+  background-image: url("../../images/chance-bg3.jpg");
+}
+
+.chance__subitem:nth-child(4) {
+  background-image: url("../../images/chance-bg4.png");
+}
+
+.chance__subitem:nth-child(5) {
+  background-image: url("../../images/chance-bg5.png");
+}
+
+.chance__subitem:nth-child(6) {
+  background-image: url("../../images/chance-bg6.png");
+}
+
+@media only screen and (max-width: 600px) {
+  .chance__inner {
+    padding: 0;
+  }
+  .chance__title {
+    font-size: 30px;
+  }
+  .chance__text__wrapper {
+    width: 100%;
+    max-width: 310px;
+    margin-bottom: 20px;
+  }
+  .chance__list {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .chance__item {
+    padding: 121px 17.5px 36px;
+  }
+  .chance__item__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+  }
+  .chance__item__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+  }
+  .chance__item::before {
+    background-size: 65px 65px;
+    top: 36px;
+  }
+  .chance__subtitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .chance__sublist {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .chance__subitem {
+    max-width: 343px;
+    padding: 0;
+    background-image: url("../../images/chancesubitembg.png");
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+  }
+  .chance__subitem:nth-child(2) {
+    background-image: url("../../images/chancesubitembg2.png");
+  }
+  .chance__subitem__price {
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 201px;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+  }
+  .chance__subitem__title__wrapper {
+    margin-bottom: 115px;
+  }
+  .chance__subitem__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .chance__subitem__links {
+    flex-direction: column;
+  }
+  .chance__subitem__link {
+    max-width: 303px;
+    padding: 25px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .chance__subitem__link--active {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=main.css.map */

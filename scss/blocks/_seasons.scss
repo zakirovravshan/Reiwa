@@ -1,5 +1,5 @@
 .seasons__inner {
-    padding-bottom: 0px;
+    // padding-bottom: 620px;
 
 }
 
@@ -22,28 +22,19 @@
 .seasons__list {
     margin: 0;
     padding: 0;
-    position: absolute;
+    // position: absolute;
     display: flex;
     align-items: center;
 
     width: 100%;
     max-width: 1270px;
     list-style-type: none;
-    overflow-x: auto;
-    -ms-overflow-style: none;
-    /* Hide the scrollbar for MS Edge */
-    scrollbar-width: none;
-    /* Hide the scrollbar for Mozilla Firefox */
-    height: fit-content;
-    margin-bottom: 100px;
+    overflow-x: scroll;
+    scrollbar-color: #fff;
+
 }
 
-.seasons__list::-webkit-scrollbar {
-    display: none;
-    /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
-    -webkit-overflow-scrolling: touch;
-    /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
-}
+
 
 .seasons__item {
     min-width: 390px;
@@ -95,7 +86,10 @@
     font-size: 24px;
     line-height: 120%;
     color: #000000;
+    
 }
+
+
 
 
 @media only screen and (max-width:600px) {

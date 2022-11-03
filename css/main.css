@@ -483,8 +483,35 @@ main {
   .container {
     padding: 0px 17.5px;
   }
+  .header__inner {
+    position: relative;
+  }
   .navbar {
+    width: 100%;
+    max-width: 600px;
+    bottom: -185px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-top: 1px solid transparent;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px;
     display: none;
+    transition: all 0.4s ease;
+  }
+  .navbar--open {
+    display: block;
+  }
+  .navbar__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar__item {
+    margin-bottom: 20px;
   }
   .header__link {
     display: none;

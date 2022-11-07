@@ -25,20 +25,16 @@
     // position: absolute;
     display: flex;
     align-items: center;
-
     width: 100%;
     max-width: 1270px;
     list-style-type: none;
-    overflow-x: scroll;
-    scrollbar-color: #fff;
 
 }
 
 
 
 .seasons__item {
-    min-width: 390px;
-    min-height: 20vh;
+    max-width: 390px;
     margin: 15px;
     font-size: 5em;
     line-height: 300px;
@@ -101,6 +97,7 @@
 
     .seasons__list {
         margin-bottom: 50px;
+        
     }
 
     .seasons__title {
@@ -111,11 +108,12 @@
         color: #222222;
         margin-bottom: 20px;
 
+
     }
 
     .seasons__item {
-        width: 100%;
-        min-width: 284px;
+      max-width: 284px;
+        
     }
 
     .seasons__item__img {

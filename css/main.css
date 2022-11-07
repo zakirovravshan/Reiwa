@@ -642,13 +642,10 @@ main {
   width: 100%;
   max-width: 1270px;
   list-style-type: none;
-  overflow-x: scroll;
-  scrollbar-color: #fff;
 }
 
 .seasons__item {
-  min-width: 390px;
-  min-height: 20vh;
+  max-width: 390px;
   margin: 15px;
   font-size: 5em;
   line-height: 300px;
@@ -715,8 +712,7 @@ main {
     margin-bottom: 20px;
   }
   .seasons__item {
-    width: 100%;
-    min-width: 284px;
+    max-width: 284px;
   }
   .seasons__item__img {
     width: 100%;

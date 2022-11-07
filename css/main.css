@@ -639,9 +639,11 @@ main {
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 1270px;
   list-style-type: none;
+  overflow: hidden;
 }
 
 .seasons__item {
@@ -654,7 +656,7 @@ main {
 
 .seasons__item__img {
   width: 100%;
-  max-width: 393px;
+  min-width: 284px;
   margin-bottom: 15px;
 }
 
@@ -702,6 +704,7 @@ main {
   }
   .seasons__list {
     margin-bottom: 50px;
+    max-width: 900px;
   }
   .seasons__title {
     font-weight: 700;

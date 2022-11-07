@@ -13,7 +13,7 @@ $('.seasons__list').slick({
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 1.05,
           }
         }
       ]

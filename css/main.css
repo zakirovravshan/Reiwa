@@ -401,6 +401,7 @@ main {
 .header__inner {
   display: flex;
   align-items: center;
+  height: 40px;
 }
 
 .logo {
@@ -429,6 +430,11 @@ main {
   align-content: center;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.logo__img {
+  display: block;
+  vertical-align: middle;
 }
 
 .navbar__item__link {

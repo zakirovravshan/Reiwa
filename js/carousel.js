@@ -2,18 +2,29 @@ $('.seasons__list').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1300,
     responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
+        
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 1.05,
+            slidesToShow: 1,
+          }
+        }
+      ]
+  });
+  
+  $('.happy__list').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    responsive: [
+        
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
           }
         }
       ]

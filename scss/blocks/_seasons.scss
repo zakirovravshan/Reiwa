@@ -30,6 +30,7 @@
     max-width: 1270px;
     list-style-type: none;
     overflow: hidden;
+    
 
 
 }
@@ -38,14 +39,16 @@
 
 
 .seasons__item {
-    max-width: 390px;
-    margin: 15px;
+    min-width: 284px;
+    margin: 0 auto;
     font-size: 5em;
     line-height: 300px;
     border-radius: 7px;
+    padding: 15px;
 }
 
 .seasons__item__img {
+    text-align: start;
     width: 100%;
     min-width: 284px;
     margin-bottom: 15px;
@@ -104,6 +107,10 @@
         max-width: 900px;
         
     }
+    .seasons__list > div{
+        padding-right : 30px;
+        
+    }
 
     .seasons__title {
         font-weight: 700;
@@ -117,13 +124,13 @@
     }
 
     .seasons__item {
-      max-width: 284px;
+      min-width: 284px;
         
     }
 
     .seasons__item__img {
         width: 100%;
-        max-width: 284px;
+        min-width: 284px;
     }
 
     .seasons__text {

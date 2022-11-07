@@ -119,5 +119,10 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
+.list__div{
+    
+    width: 100%;
+    min-width: 300px;
+  
+}
 

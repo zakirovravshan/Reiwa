@@ -1,0 +1,102 @@
+.happy__inner {
+    padding-bottom: 100px;
+}
+
+.happy__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 122%;
+    text-align: center;
+    color: #222222;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.happy__list {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+
+}
+
+.happy__item {
+    width: 100%;
+    max-width: 288px;
+    border-radius: 24px;
+    padding: 20px 73px 20px 20px;
+    background-image: url("../../images/student2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.happy__item:nth-child(2) {
+    background-image: url("../../images/student1.png");
+}
+
+.happy__img {
+    margin-bottom: 275px;
+}
+
+.happy__wrapper {
+    width: 100%;
+    max-width: 195px;
+}
+
+.happy__item__name {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.happy__line {
+    display: block;
+    width: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    background-color: #fff;
+
+    margin-bottom: 5px;
+}
+
+.happy__universe {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width:600px) {
+    .happy__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 123%;
+        text-align: center;
+        color: #222222;
+        margin-bottom: 20px;
+    }
+
+    .happy__list{}
+
+
+    .happy__list > div {
+        padding-right: 40px;
+        width: 100%;
+        min-width: 284px;
+        
+        
+    }
+    .happy__item{
+        min-width: 288px;
+    }
+}

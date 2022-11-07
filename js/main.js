@@ -9,6 +9,8 @@ const elArrow = document.querySelector('.arrow__span')
 elButton.addEventListener('click' , function(){
     elNavbar.classList.toggle('navbar--open')
 })
+
+
 moreBtn.addEventListener('click' , function(){
     infoItems.forEach((items) =>{
         items.classList.toggle('information__item--active')
@@ -24,9 +26,9 @@ moreBtn.addEventListener('click' , function(){
     
 })
 
-window.addEventListener('scroll' , function(){
-    console.log(window.scrollY);
-    if(window.scrollY > 400){
-        elArrow.classList.toggle('arrow__span--open')
-    }
-})
+// window.addEventListener('scroll' , function(){
+//     console.log(window.scrollY);
+//     if(window.scrollY > 400){
+//         elArrow.classList.toggle('arrow__span--open')
+//     }
+// })

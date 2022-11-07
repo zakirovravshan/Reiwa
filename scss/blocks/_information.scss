@@ -27,11 +27,26 @@
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
+    margin-bottom: 70px;
 
 }
 
 .information__btn {
     display: none;
+}
+
+.info__btn{
+    display: block;
+        margin: auto;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 122%;
+        text-decoration-line: underline;
+        color: #D10700;
+        background-color: transparent;
+        border: none;
+        margin-bottom: 70px;
+        text-align: center;
 }
 
 @media only screen and (max-width:600px) {
@@ -83,4 +98,5 @@
         border: none;
         margin-bottom: 70px;
     }
+
 }

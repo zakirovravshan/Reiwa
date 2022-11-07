@@ -29,4 +29,52 @@ $('.seasons__list').slick({
         }
       ]
   });
+
+  $('.partners__list--right').slick({
+  
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 0,
+    slidesToScroll: 1,
+    slidesToShow: 5,
+    arrows: false,
+    cssEase: 'linear',
+    speed: 3000,
+    initialSlide: 1,
+    draggable: false,
+    rtl: true,
+
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+          arrows: false,
+          slidesToShow: 1
+      }
+  }]
+    
+  });
+  $('.partners__list--left').slick({
+   
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 0,
+    slidesToScroll: 1,
+    slidesToShow: 5,
+    arrows: false,
+    cssEase: 'linear',
+    speed: 3000,
+    initialSlide: 1,
+    draggable: false,
+    // ltr: true,
+
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+          arrows: false,
+          slidesToShow: 1
+      }
+  }]
+    
+  });
+
   
